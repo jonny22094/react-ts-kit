@@ -7,33 +7,33 @@ module.exports = {
   output: {
     filename: './bundle.js',
     path: path.resolve(__dirname, '/build'),
-    publicPath: '/'
+    publicPath: '/',
   },
   devtool: 'source-map',
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
-    plugins: [new TsConfigPathsPlugin()]
+    plugins: [new TsConfigPathsPlugin()],
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        loader: 'awesome-typescript-loader',
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: 'file-loader'
-      }
-    ]
+        loader: 'file-loader',
+      },
+    ],
   },
   plugins: [
     new CheckerPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html'
-    })
-  ]
+      template: './src/index.html',
+    }),
+  ],
 }
