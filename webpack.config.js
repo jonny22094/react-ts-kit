@@ -1,12 +1,13 @@
 const path = require('path')
-const {CheckerPlugin, TsConfigPathsPlugin} = require('awesome-typescript-loader')
+const {TsConfigPathsPlugin} = require('awesome-typescript-loader')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/bootstrap.tsx',
   output: {
-    filename: './bundle.js',
-    path: path.resolve(__dirname, '/build'),
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'build'),
     publicPath: '/',
   },
   devtool: 'source-map',
@@ -31,7 +32,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CheckerPlugin(),
+    new ForkTsCheckerWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
     }),
