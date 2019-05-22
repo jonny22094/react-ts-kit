@@ -8,7 +8,7 @@
 |  clean  | remove node_modules and build directory |
 
 
-Packages: 
+**Packages:**
   - React
   - Redux
   - react-router-dom
