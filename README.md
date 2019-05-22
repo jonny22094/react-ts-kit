@@ -1,13 +1,12 @@
 # React TypeScript start kit
 
 
-| Commands
-|       |                                         | 
-|-------|-----------------------------------------|
-| watch | run roject with hot reload              | 
-| build | build project                           |
-| clean | remove node_modules and build directory |
-|       |                                         |
+| Command | Description                             |
+|---------|-----------------------------------------|
+|  watch  | run roject with hot reload              | 
+|  build  | build project                           |
+|  clean  | remove node_modules and build directory |
+
 
 Packages: 
   - React
