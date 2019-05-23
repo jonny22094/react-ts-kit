@@ -1,4 +1,4 @@
-# React TypeScript start kit
+# React TypeScript starter kit
 
 
 | Command | Description                             |
