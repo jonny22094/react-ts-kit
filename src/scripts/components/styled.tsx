@@ -1,4 +1,4 @@
-import {createGlobalStyle} from '@app/utils/styled'
+import { createGlobalStyle } from '@app/utils/styled';
 
 export const GlobalStyles = createGlobalStyle`
   body {
@@ -7,4 +7,4 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
-`
+`;

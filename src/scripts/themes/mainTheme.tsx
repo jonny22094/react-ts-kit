@@ -1,4 +1,4 @@
-import {Theme} from '@app/utils/styled'
+import { Theme } from '@app/utils/styled';
 
 const MainTheme: Theme = {
   colors: {
@@ -8,6 +8,6 @@ const MainTheme: Theme = {
     positive: 'f9f9f9',
     negative: 'f9f9f9',
   },
-}
+};
 
-export default MainTheme
+export default MainTheme;

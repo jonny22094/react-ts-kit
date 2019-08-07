@@ -1,7 +1,7 @@
-const path = require('path')
-const {TsConfigPathsPlugin} = require('awesome-typescript-loader')
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/bootstrap.tsx',
@@ -37,4 +37,4 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-}
+};

@@ -1,14 +1,14 @@
-import * as styledComponents from 'styled-components'
-import {ThemedStyledComponentsModule} from 'styled-components'
+import * as styledComponents from 'styled-components';
+import { ThemedStyledComponentsModule } from 'styled-components';
 
 export interface Theme {
   colors: {
-    background: string
-    primary: string
-    ui: string
-    positive: string
-    negative: string
-  }
+    background: string;
+    primary: string;
+    ui: string;
+    positive: string;
+    negative: string;
+  };
 }
 
 const {
@@ -17,7 +17,7 @@ const {
   keyframes,
   ThemeProvider,
   createGlobalStyle,
-} = styledComponents as ThemedStyledComponentsModule<Theme>
+} = styledComponents as ThemedStyledComponentsModule<Theme>;
 
-export {css, createGlobalStyle, keyframes, ThemeProvider}
-export default styled
+export { css, createGlobalStyle, keyframes, ThemeProvider };
+export default styled;
